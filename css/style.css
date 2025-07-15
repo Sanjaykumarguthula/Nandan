@@ -3389,6 +3389,26 @@ height: 100%;
     transition: all 0.3s ease;
 }
 
+.swiper-slide .card-link {
+  display: inline-block;
+  color: #0199aa;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  padding-right: 25px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.swiper-slide .card-link i {
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.swiper-slide:hover .card-link {
+    color: #fff;
+}
+
 .banner-discription .banner-bg-new .container .card-link::after {
   content: '→';
   position: absolute;
@@ -3584,6 +3604,28 @@ height: 100%;
 
 .pharmaceuticals-block:hover {
   transform: translateY(-5px);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0199aa;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0199aa;
+  display: inline-block;
+}
+
+.sub-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.page-title,
+.banner-discription h2 {
+  margin-bottom: 40px;
 }
 
 .pharmaceuticals-block h3 {

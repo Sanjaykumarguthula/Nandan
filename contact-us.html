@@ -118,6 +118,16 @@
                             <span class="error"></span>
                           </div>
                           <div class="form-group col-md-12">
+                            <select class="form-control" name="inquiry" id="inquiry">
+                                <option value="">Reason for Inquiry</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Product Information">Product Information</option>
+                                <option value="Business Partnership">Business Partnership</option>
+                                <option value="Career Opportunity">Career Opportunity</option>
+                            </select>
+                            <span class="error"></span>
+                          </div>
+                          <div class="form-group col-md-12">
                             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                             <span class="error"></span>
                           </div>
@@ -402,6 +412,13 @@
               isValid = false;
           }
   
+          // Validate Inquiry
+          let inquiry = $("#inquiry").val();
+          if (inquiry === "") {
+              $("#inquiry").next(".error").text("Please select a reason for inquiry.");
+              isValid = false;
+          }
+
           // Validate Subject
           let subject = $("input[name='subject']").val().trim();
           if (subject === "") {
@@ -424,6 +441,7 @@
                   email: email,
                   countryCode: countryCode, 
                   phone: phone,
+                  inquiry: inquiry,
                   subject: subject,
                   message: message,
               };
