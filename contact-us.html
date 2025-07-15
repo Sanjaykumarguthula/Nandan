@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="icon-fonts/styles.css">
     <link rel="icon" href="images/favicon.png">
     <!-- Custome CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/redesign.css">
 </head>
 
 <body> 
@@ -86,161 +86,88 @@
       </div>
   </div>
     <section class="body-main">
-        <section class="send-message home-send-enquiry">
+        <section class="contact-banner">
             <div class="container">
-              <h2 class="page-title text-center mb-3">Contact Us</h2>
-              <div class="row m-0 align-items-center">
-                <div class="col-12 col-lg-6 p-0 px-lg-3">
-                  <form action="contact-data.php" method="POST" class="send-enquiry-form" enctype="multipart/form-data">
-                    <div class="text-center">
-                      <h4>SEND AN ENQUIRY OR LEAVE US A MESSAGE</h4>
-                        <div class="row">
-                          <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="firstName" name="fname" placeholder="First Name">
-                            <span class="error"></span>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="lastName" name="lname" placeholder="Last Name">
-                            <span class="error"></span>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
-                            <span class="error"></span>
-                          </div>
-          
-                          <div class="form-group col-md-6">
-                            <div class="row m-0 flex-nowrap phonevalue">
-                              <select name="countrycode" id="countyCode" class="col-auto p-0">
-                                <option value="+91">+91</option>
-                              </select>
-                              <input type="number" class="form-control col d-flex" name="phone" id="phoneNumber" placeholder="Phone Number">
-                            </div>
-                            <span class="error"></span>
-                          </div>
-                          <div class="form-group col-md-12">
-                            <select class="form-control" name="inquiry" id="inquiry">
-                                <option value="">Reason for Inquiry</option>
-                                <option value="General Inquiry">General Inquiry</option>
-                                <option value="Product Information">Product Information</option>
-                                <option value="Business Partnership">Business Partnership</option>
-                                <option value="Career Opportunity">Career Opportunity</option>
-                            </select>
-                            <span class="error"></span>
-                          </div>
-                          <div class="form-group col-md-12">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                            <span class="error"></span>
-                          </div>
-                          <div class="form-group col-md-12">
-                            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Your Enquiry"></textarea>
-                            <span class="error"></span>
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary col-6 mb-4">SEND</button>
-                      </div>
-                    </form>
-                  </div>
-                <div class="col-12 col-lg-6 pt-4 pt-lg-0">
-                  <div class="row">
-                    <div class="col-12 col-sm-6 pl-0 contact-add-card-block">
-                      <div class="contact-add-card">
-                        <div class="text-end">
-                          <img src="images/united-kingdom-svg.png">
-                        </div>
-                        <h4> <i class="icon-map-marker"></i> United Kingdom:</h4>
-                        <p>
-                          Icon Innovation Centre,<br>
-                          Suite 33, Eastern Way,
-                          <br>
-                          Daventry-NN11 0QB,
-                          <br>United Kingdom <br>
-                          <span class="single-letter">T</span>: +44 (0) 1327 304 976
-                          <br>
-                          <span class="single-letter">M</span>: +44 (0) 7944 509 807
-                          <br>
-                          <span class="single-letter">E</span>: info.uk@ntherapeutics.uk
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-6 p-0 contact-add-card-block">
-                      <div class="contact-add-card">
-                        <div class="text-end">
-                          <img src="images/india-svg.png">
-                        </div>
-                        <h4> <i class="icon-map-marker"></i> India:</h4>
-                        <p>
-                          D.No-1-1-336/19, Vivek Nagar, Chikkadpally, 
-                          Hyderabad, 500020 <br>
-                          Telangana, India<br>
-                          <span class="single-letter">M</span>: +91 (0) 9848 722 266<br>
-                          <span class="single-letter">M</span>: +91 (0) 7013 380 075<br>
-                          <span class="single-letter">E</span>: info.india@ntherapeutics.uk
-                        </p>
-                      </div>
-                    </div>
-                   
-                    <div class="col-12 col-sm-6 pl-0 contact-add-card-block d-none">
-                      <div class="contact-add-card">
-                        <div class="text-end">
-                          <img src="images/korea.png">
-                        </div>
-                        <h4> <i class="icon-map-marker"></i> South Korea:</h4>
-                        <p>
-                          1008-2, 99 Centum dong-ro,<br>
-                          Haeundae-gu,<br>
-                          Busan, <br>
-                          Republic of Korea<br>
-                          <span class="single-letter">E</span>: info.skorea@ntherapeutics.uk
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-6 p-0 contact-add-card-block d-none">
-                      <div class="contact-add-card">
-                        <div class="text-end">
-                          <img src="images/germany-svg.png">
-                        </div>
-                        <h4> <i class="icon-map-marker"></i> Germany:</h4>
-                        <p>
-                          Ebracher Weg 16,<br>
-                          91056 Erlangen <br>
-                          Germany
-                          <br>
-                          Deutchland <br>
-                          <span class="single-letter">E</span>: info.germany@ntherapeutics.uk
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-6 pl-0 contact-add-card-block d-none">
-                      <div class="contact-add-card">
-                        <div class="text-end">
-                          <img src="images/flag-uganda.png">
-                        </div>
-                        <h4> <i class="icon-map-marker"></i> Uganda:</h4>
-                        <p>
-                          Plot 36, Bukoto Cresent Road, Naguru,
-                          Kampala, P.O Box 30650 <br>Uganda<br>
-                          <span class="single-letter">E</span>: info.uganda@ntherapeutics.uk
-                        </p>
-                      </div>
-                    </div>
-                  
-                    <div class="col-12 col-sm-6 p-0 contact-add-card-block d-none">
-                      <div class="contact-add-card">
-                        <div class="text-end">
-                          <img src="images/flag-southafrica.png">
-                        </div>
-                        <h4> <i class="icon-map-marker"></i> South Africa:</h4>
-                        <p>
-                          Stand No 511,<br>Rudolph Street,<br>Sunderland Ridge industrial Park, <br>Centurion, 0157,<br><span class="single-letter">E</span>: info.rsa@ntherapeutics.uk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="banner-content">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with Nandan Therapeutics for business inquiries and partnerships.</p>
                 </div>
-             
-                 </div>
             </div>
-          </section>
+        </section>
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="contact-form">
+                            <h2>Send us a Message</h2>
+                            <form action="contact-data.php" method="POST" class="send-enquiry-form" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="firstName" name="fname" placeholder="First Name">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="lastName" name="lname" placeholder="Last Name">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="row m-0 flex-nowrap phonevalue">
+                                            <select name="countrycode" id="countyCode" class="col-auto p-0">
+                                                <option value="+91">+91</option>
+                                            </select>
+                                            <input type="number" class="form-control col d-flex" name="phone" id="phoneNumber" placeholder="Phone Number">
+                                        </div>
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <select class="form-control" name="inquiry" id="inquiry">
+                                            <option value="">Reason for Inquiry</option>
+                                            <option value="General Inquiry">General Inquiry</option>
+                                            <option value="Product Information">Product Information</option>
+                                            <option value="Business Partnership">Business Partnership</option>
+                                            <option value="Career Opportunity">Career Opportunity</option>
+                                        </select>
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea class="form-control" name="message" id="message" rows="4" placeholder="Your Enquiry"></textarea>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-info">
+                            <h2>Contact Information</h2>
+                            <div class="info-box">
+                                <h4><i class="fas fa-map-marker-alt"></i> United Kingdom</h4>
+                                <p>Icon Innovation Centre,<br>Suite 33, Eastern Way,<br>Daventry-NN11 0QB,<br>United Kingdom</p>
+                                <p><span class="single-letter">T</span>: +44 (0) 1327 304 976</p>
+                                <p><span class="single-letter">M</span>: +44 (0) 7944 509 807</p>
+                                <p><span class="single-letter">E</span>: info.uk@ntherapeutics.uk</p>
+                            </div>
+                            <div class="info-box">
+                                <h4><i class="fas fa-map-marker-alt"></i> India</h4>
+                                <p>D.No-1-1-336/19, Vivek Nagar, Chikkadpally, Hyderabad, 500020<br>Telangana, India</p>
+                                <p><span class="single-letter">M</span>: +91 (0) 9848 722 266</p>
+                                <p><span class="single-letter">M</span>: +91 (0) 7013 380 075</p>
+                                <p><span class="single-letter">E</span>: info.india@ntherapeutics.uk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
  <footer class="footer">
         <section class="footer-medile-section">
