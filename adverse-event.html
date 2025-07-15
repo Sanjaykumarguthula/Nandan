@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nandan Therapeutics | Global Pharmaceutical Supplie</title>
+    <meta name="description"
+        content="Nandan Therapeutics is a trusted manufacturer and distributor of high-quality healthcare products, ensuring global compliance and excellence.">
+    <meta name="keywords"
+        content="nandan therapeutics, Pharmaceutical Manufacturer, premium quality healthcare products, wholesale distributors, world wide supply.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="icon-fonts/styles.css">
+    <link rel="icon" href="images/favicon.png">
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.scss">
+</head>
+
+<body>
+    <header class="header-justify">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="brand-log">
+                    <a href="/">
+                        <img src="images/brand-log.jpg" alt="Brand Log" height="60">
+                    </a>
+                </div>
+                <div class="menu-toggle d-flex align-items-center">
+                    <div class="btn-box me-3">
+                        <a href="contact-us.html" class="primary_btn">Get In Touch</a>
+                    </div>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <div class="d-flex align-items-center offcanvas-toggle">
+                            
+                            <span>Menu</span>
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <span></span>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <div class="vertical-menu">
+                <ul>
+                    <li class="menu-item">
+                        <a href="/">Home </a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">About Us <i class="bi bi-chevron-down dropdown-icon"></i></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                            <li class="menu-item"><a href="about-us.html#our-core-value">Our Core Values</a></li>
+                            <li class="menu-item"></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="menu-item">
+                        <a href="product.html">Products</a>
+                    </li> -->
+                    <li class="menu-item"><a href="product.html?prodId=drug-product">Drug Products</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Medical Devices <i class="bi bi-chevron-down dropdown-icon"></i></a>
+                        <ul class="sub-menu">
+                           <li class="menu-item"><a href="medical-devices.html#emerg">Emergency Hemostatic Dressing</a></li>
+                            <li class="menu-item"><a href="medical-devices.html#poct">POCT</a></li>
+                            <li class="menu-item"><a href="medical-devices.html#smd">Aesthetics</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="other-products.html">Other Products</a></li>
+                    <li class="menu-item"><a href="business-development.html">Business / Partnership</a></li>
+                    <li class="menu-item">
+                        <a href="partner-with-us.html">Partner With US</a>
+                    </li>
+                    <li class="menu-item"><a href="careers.html">Careers</a></li>
+                    <li class="menu-item active"><a href="adverse-event.html">Adverse Event Reporting Form</a></li>
+                    <li class="menu-item"><a href="blog.html">Blogs</a></li>
+                    <li class="menu-item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="form-reporting">
+        <div class="container form-reporting-container shadow-lg">
+            <h2 class="page-title text-center my-md-4 my-3">ADVERSE EVENT REPORTING FORM</h2>
+            <form action="#" method="POST" class="send-reporting-form" enctype="multipart/form-data">
+                <div class="row m-0">
+                    <div class="col-12">
+                        <p>Product Details</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="productName" name="pname"
+                            placeholder="Product Name*">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="date" class="form-control" id="productStartDate" name="startDate"
+                            placeholder="Product Start Date">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="date" class="form-control" id="productEndDate" name="endDate"
+                            placeholder="Product End Date">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="productIndication" name="pIndication"
+                            placeholder="Indication for which Product was Used*">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="productBatch" name="pBatch"
+                            placeholder="Lot or Batch Number">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="date" class="form-control" id="eventStartDate" name="eventStartDate"
+                            placeholder="Event Start Date">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="date" class="form-control" id="eventEndDate" name="eventEndDate"
+                            placeholder="Event End Date">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p>Product details*</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="productMain" name="pMain"
+                            placeholder="Dose, Formulation, Route of administration, Frequency">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p>Action taken as a result of side effect*</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <select id="sideEffect" class="form-control" name="side-effects">
+                            <option value="">Choose Treatment</option>
+                            <option value="Treatment Discontinued">Treatment Discontinued</option>
+                            <option value="Treatment Continued">Treatment Continued</option>
+                            <option value="Treatment Interrupted">Treatment Interrupted</option>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p>Side Effect Details*</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="sideEffectDetails" name="sDetails"
+                            placeholder="Side Effects Experienced After Taking the Amarox Product">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p>Country in which Event Occurred</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <select class="form-control" aria-invalid="false" name="eventcountry">
+                            <option value="" >Select Country</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Republic of Cyprus">Republic of Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <p>Seriousness*</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <select class="form-control" aria-required="true" aria-invalid="false" name="seriousness">
+                            <option value="" >Select Seriousness</option>
+                            <option value="Resulted in Death">Resulted in Death</option>
+                            <option value="Was Life Threatening">Was Life Threatening</option>
+                            <option value="Resulted in Disability">Resulted in Disability</option>
+                            <option value="Resulted in Birth Defects or Congenital Anomaly">Resulted in Birth Defects or
+                                Congenital Anomaly</option>
+                            <option value="Resulted in Hospitalisation or its Prolongation">Resulted in Hospitalisation
+                                or its Prolongation</option>
+                            <option value="Medically Significant">Medically Significant</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p>Outcome of Side Effect*</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <select class="form-control" aria-required="true" aria-invalid="false"
+                            name="outcomeofsideeffects">
+                            <option value="" >Select Side Effect</option>
+                            <option value="Complete Recovery">Complete Recovery</option>
+                            <option value="Condition Deteriorated">Condition Deteriorated</option>
+                            <option value="Condition Improving">Condition Improving</option>
+                            <option value="Condition Unchanged">Condition Unchanged</option>
+                            <option value="Fatal or Death">Fatal or Death</option>
+                            <option value="Recovered with Sequelae">Recovered with Sequelae</option>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <textarea class="form-control" name="message" id="messageInput" rows="10" cols="40"
+                            placeholder="Describe if any treatment given for side effect"></textarea>
+                            <span class="error"></span>
+                        </div>
+                    <div class="col-12">
+                        <p>Reporter Details</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="reportName" name="rName" placeholder="Name">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="form-control" aria-required="true" aria-invalid="false" name="rprofession">                            
+                            <option value="" >Profession</option>
+                            <option value="Health Care Professional">Health Care Professional</option>
+                            <option value="Non-Health Care Professional">Non-Health Care Professional</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="form-control" aria-required="true" aria-invalid="false" name="rconsent">
+                            <option value="" >Reporter Consent</option>
+                            <option value="Can Contact">Can Contact</option>
+                            <option value="Cannot Contact">Cannot Contact</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="form-control" aria-invalid="false" name="rcountry">
+                            <option value="" >Select Country</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Republic of Cyprus">Republic of Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="UK">UK</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="form-control" aria-invalid="false" name="relationwithpatient">
+                           
+                            <option value="" >Relation with Patient</option>
+                            <option value="Self">Self</option>
+                            <option value="Friend">Friend</option>
+                            <option value="Spouse">Spouse</option>
+                            <option value="Relative">Relative</option>
+                            <option value="Treating">Treating</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Nurse">Nurse</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <p>Reporter contact details</p>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="number" class="form-control" id="phoneNumber" name="pNumber" placeholder="Mobile">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input type="email" class="form-control" id="userEmail" name="emailID"
+                            placeholder="EmailID">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea class="form-control" name="address" id="addressInput" rows="10" cols="40"
+                            placeholder="Address"></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="form-control" aria-required="true" aria-invalid="false" name="patientdetails1">
+                            <option value="" >Patient Details</option>
+                            <option value="Self">Self</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="form-control" aria-required="true" aria-invalid="false" name="patientgender1">
+                          
+                            <option value="" >Gender of the Patient</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Cross Gender">Cross Gender</option>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                        <span class="error" ></span>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="number" class="form-control" id="ageNumber" name="ageNumber" placeholder="Age">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-9">
+                        <input type="number" class="form-control" id="heightNumber" name="heightNumber" placeholder="Height/Weight">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p>Medical History*</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea class="form-control" name="labTextarea" id="labInput" rows="10" cols="40"
+                            placeholder="Lab tests, Allergies etc."></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" id="marketingStatus" name="mStatus" placeholder="Is the Patient Participating in any Clinical Trails or Post Marketing Studies">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p>Additional documents to be attached(If any)</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <input type="file" name="file_upload" id="file_upload" >
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-12">
+                        <p class="file-type">Please submit any relevant documents as an attachment and email to safety@amaroxpharma.com, Tel number +44(0)2039720005</p>
+                    </div>
+                    <div class="col-12 mb-5">
+                        <input type="submit" value="Submit" >
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="footer-medile-section">
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col-12">
+                        <figure class="footer-logo">
+                                <a href="/">
+                                    <img width="204" height="61" src="images/brand-log.jpg"
+                                        class="attachment-full size-full" alt="" decoding="async" loading="lazy">
+                                </a>
+                            </figure>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12 px-sm-2 px-0">
+                        <div class="footer-widget logo-widget">
+                            
+                            <div class="text">
+                                <!-- <p><span><b>Nandan Therapeutics</b> is a reputable global pharmaceutical company,
+                                        specialized
+                                        in the manufacturing, distributing, marketing and export of a <b>wide range
+                                            of</b> Human and Veterinary
+                                        <b>high-quality products.</b></span></p> -->
+                                <p><strong>Nandan Therapeutics</strong> is a specialty pharmaceutical and medical device company with deep expertise in global market access.</p>
+                            </div>
+                            <ul class="social-links clearfix">
+                                <li><a href="#_"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="#_"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a href="#_"><i class="bi bi-behance"></i></a></li>
+                                <li><a href="#_"><i class="bi bi-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-4 pt-md-0 px-sm-2 col-12 px-0 ">
+                        <div class="footer-widget links-widget">
+                            <!-- <div class="widget-title">
+                                <h3>LINK US</h3>
+                            </div> -->
+                            <div class="widget-content">
+                                <ul class="links-list clearfix">
+                                    <!-- <li><a href="#">Services</a></li> -->
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <!-- <li><a href="#">Cases</a></li> -->
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="contact-us.html">Contact</a></li>
+                                    <!-- <li><a href="#">Testimonial</a></li> -->
+                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                    <!-- <li><a href="#">Book Table</a></li> -->
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-4 pt-md-0 px-sm-2 col-12 px-0">
+                        <div class="footer-address">
+                        
+                            <h4> <i class="icon-map-marker"></i> United Kingdom:</h4>
+                            <p>
+                                Icon Innovation Centre,
+                                Suite 33, <br/>
+                                Eastern Way,
+                                Daventry-NN11 0QB,<br/>
+                                United Kingdom <br>
+                            <span class="single-letter">T</span>: +44 (0) 1327 304 976
+                            <br>
+                            <span class="single-letter">M</span>: +44 (0) 7944 509 807
+                            <br>
+                            <span class="single-letter">E</span>: info.uk@ntherapeutics.uk
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 pt-4 px-sm-2 pt-lg-0 px-0 d-none">
+                        <div class="footer-widget contact-widget">
+                            <ul class="info-list clearfix">
+                                <li>
+                                    <h6>Address :</h6>
+                                    D.No-1-1-336/19, Vivek Nagar, Chikkadpally,
+                                    Hyderabad, 500020 Telangana, India.
+                                </li>
+                                <li>
+                                    <h6>Telephone :</h6><a href="tel:+99000111222500">(+91 (0) 7013 380 075)</a>
+                                </li>
+                                <li>
+                                    <h6>E-mail :</h6><a href="mailto:info@example.com">info.india@ntherapeutics.uk</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright row m-0 centred">
+                    <p class="text-center text-white mt-3"> © Copyright 2025 by Nandan Therapeutics</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="footer-bottom centred">
+            <div class="container">
+                <div class="copyright">
+                    <p> © Copyright 2025 by Nandan Therapeutics</p>
+                </div>
+            </div>
+        </section> -->
+    </footer>
+    <div class="scroll-up" data-target="html">
+        <i class="icon icon-angle-up-1"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.cookieMessage.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            let today = new Date().toISOString().split("T")[0];
+            $("input[type='date']").attr("min", today);
+           
+            $(".send-reporting-form").submit(function (e) {
+                e.preventDefault();
+                let isValid = true;
+                $(".error").text("");     
+                // Validate text inputs
+                $("input[type='text']").each(function () {
+                    if ($(this).val().trim() === "") {
+                        $(this).next(".error").text("This field is required.");
+                        isValid = false;
+                    }
+                });           
+
+                // Validate email
+                let email = $("#userEmail").val().trim();
+                let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email === "") {
+                    $("#userEmail").next(".error").text("Email is required.");
+                    isValid = false;
+                } else if (!emailPattern.test(email)) {
+                    $("#userEmail").next(".error").text("Enter a valid email.");
+                    isValid = false;
+                }
+    
+                // Validate phone number
+                let phone = $("#phoneNumber").val().trim();
+                let phonePattern = /^[0-9]{10}$/;
+                if (phone === "") {
+                    $("#phoneNumber").next(".error").text("Mobile number is required.");
+                    isValid = false;
+                } else if (!phonePattern.test(phone)) {
+                    $("#phoneNumber").next(".error").text("Enter a valid 10-digit number.");
+                    isValid = false;
+                }
+    
+                // Validate date fields
+                $("input[type='date']").each(function () {
+                   
+                    if ($(this).val().trim() === "") {
+                        $(this).next(".error").text("Date is required.");
+                        isValid = false;
+                    }
+                });
+                $("input[type='number']").each(function () {
+                    let fieldName = $(this).attr("name");
+                    let value = $(this).val().trim();
+
+                    if (fieldName === "ageNumber" && (value === "" || value <= 0)) {
+                        $(this).next(".error").text("Please enter a valid age.");
+                        isValid = false;
+                    }
+
+                    if (fieldName === "heightNumber" && (value === "" || value <= 0)) {
+                        $(this).next(".error").text("Please enter a valid height/weight.");
+                        isValid = false;
+                    }
+                });
+                $("select").each(function () {
+                    if ($(this).val() === "") {
+                        $(this).closest(".form-group").find(".error").text("Please select an option.");
+                        isValid = false;
+                    }
+                });
+    
+                // Validate textarea fields
+                $("textarea").each(function () {
+                    if ($(this).val().trim() === "") {
+                        $(this).next(".error").text("This field is required.");
+                        isValid = false;
+                    }
+                });
+    
+                // Prevent form submission if validation fails
+                let file = $("input[name='file']").val();
+                if (file === "") {
+                    $("input[name='file']").next(".error").text("Please upload a File.");
+                    isValid = false;
+                }
+               
+                if (isValid) {
+                    debugger
+                    let reportingData = {
+                        productName: $("#productName").val(),
+                        productStartDate: $("#productStartDate").val(),
+                        productEndDate: $("#productEndDate").val(),
+                        productIndication: $("#productIndication").val(),
+                        productBatch: $("#productBatch").val(),
+                        eventStartDate: $("#eventStartDate").val(),
+                        eventEndDate: $("#eventEndDate").val(),
+                        productMain: $("#productMain").val(),
+                        sideEffect: $("#sideEffect").val(),
+                        sideEffectDetails: $("#sideEffectDetails").val(),
+                        eventCountry: $("[name='eventcountry']").val(),
+                        seriousness: $("[name='seriousness']").val(),
+                        outcomeOfSideEffects: $("[name='outcomeofsideeffects']").val(),
+                        message: $("#messageInput").val(),
+                        reportName: $("#reportName").val(),
+                        profession: $("[name='rprofession']").val(),
+                        reporterConsent: $("[name='rconsent']").val(),
+                        reporterCountry: $("[name='rcountry']").val(),
+                        relationWithPatient: $("[name='relationwithpatient']").val(),
+                        phoneNumber: $("#phoneNumber").val(),
+                        emailID: $("#userEmail").val(),
+                        address: $("#addressInput").val(),
+                        patientDetails: $("[name='patientdetails1']").val(),
+                        patientGender: $("[name='patientgender1']").val(),
+                        ageNumber: $("#ageNumber").val(),
+                        heightNumber: $("#heightNumber").val(),
+                        labTests: $("#labInput").val(),
+                        marketingStatus: $("#marketingStatus").val(),
+                        fileUploaded: $("input[name='file_upload']").val()
+                    };
+
+                    // Store the object in the array
+                    console.log("Stored Data:", reportingData);
+                }
+            });
+        });
+    </script>
+        
+</body>
+
+</html>

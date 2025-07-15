@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nandan Therapeutics | Global Pharmaceutical Supplie</title>
+    <meta name="description"
+        content="Nandan Therapeutics is a trusted manufacturer and distributor of high-quality healthcare products, ensuring global compliance and excellence.">
+    <meta name="keywords"
+        content="nandan therapeutics, Pharmaceutical Manufacturer, premium quality healthcare products, wholesale distributors, world wide supply.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="icon-fonts/styles.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.scss">
+</head>
+
+<body>
+    <header class="header-justify">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="brand-log">
+                    <a href="/">
+                        <img src="images/brand-log.jpg" alt="Brand Log" height="60">
+                    </a>
+                </div>
+                <div class="menu-toggle d-flex align-items-center">
+                    <div class="btn-box me-3">
+                        <a href="contact-us.html" class="primary_btn">Get In Touch</a>
+                    </div>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <div class="d-flex align-items-center offcanvas-toggle">
+
+                            <span>Menu</span>
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <span></span>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <div class="vertical-menu">
+                <ul>
+                    <li class="menu-item active">
+                        <a href="/">Home </a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">About Us <i class="bi bi-chevron-down dropdown-icon"></i></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                            <li class="menu-item"><a href="about-us.html#our-core-value">Our Core Values</a></li>
+                            <li class="menu-item"></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="menu-item">
+                        <a href="product.html">Products</a>
+                    </li> -->
+                    <li class="menu-item"><a href="product.html?prodId=drug-product">Drug Products</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Medical Devices <i class="bi bi-chevron-down dropdown-icon"></i></a>
+                        <ul class="sub-menu">
+                           <li class="menu-item"><a href="medical-devices.html#emerg">Emergency Hemostatic Dressing</a></li>
+                            <li class="menu-item"><a href="medical-devices.html#poct">POCT</a></li>
+                            <li class="menu-item"><a href="medical-devices.html#smd">Aesthetics</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="other-products.html">Other Products</a></li>
+                    <li class="menu-item"><a href="business-development.html">Business / Partnership</a></li>
+                    <li class="menu-item">
+                        <a href="partner-with-us.html">Partner With US</a>
+                    </li>
+                    <li class="menu-item"><a href="careers.html">Careers</a></li>
+                    <li class="menu-item"><a href="adverse-event.html">Adverse Event Reporting Form</a></li>
+                    <li class="menu-item"><a href="blog.html">Blogs</a></li>
+                    <li class="menu-item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <section class="banner-section home-page">
+            <div class="banner-block">
+                <!-- <div class="video-container">
+                    <div class="videoPlayer_layer" id="myVideo"
+                        style="width: 100%; height: auto; transition: transform 0.5s ease, width 0.3s ease;transform: scale(1);">
+                        <video muted loop autoplay playsinline preload="auto" width="100%" height="auto"
+                            poster="video/home-banner.mp4">
+                            <source src="video/home-banner.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h1 id="pharma-banner-title">Uncompromising Quality: Our Commitment to Excellence</h1>
+                </div> -->
+                <div class="main-banner">
+                    <ul class="banner-slider" id="mainBanners">
+                        <li>
+                            <img src="images/main-banner.png" alt="">
+                        </li>
+                       <li>
+                            <img src="images/beautiful-family-walking-along-beach.png" alt="">
+                        </li>
+                         <!-- <li>
+                            <img src="images/baner3.png" alt="">
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="banner-content">
+                        <span style="text-align: center; color: #0f4553;">WHO WE ARE</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="banner-discription  pt-2 pb-0">
+            <div class="banner-bg-new">
+            <div class="container">
+                <h2><span>Transforming Healthcare with Quality and Innovation.</span></h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-content">
+                        <p><strong>Nandan Therapeutics</strong> is a specialty pharmaceutical and medical device company with deep expertise in <strong>global market access.</strong> We offer a portfolio of differentiated, value-added products that enhance patient care, with footprint across <strong>Europe, India, the Middle East, and Africa.</strong> Our products are manufactured in world-class facilities compliant with <strong>MHRA, US FDA, WHO, and EU GMP</strong> Standards.</p>
+                        
+                        <div class="highlight">
+                            <p>We offer a diverse portfolio that includes specialty pharmaceuticals —such as <strong>Sustained-release Formulations, Transdermal patches, and Hormonal therapies</strong>—as well as innovative medical devices, with a focus on segments like Hemostasis, Aesthetics and other healthcare products.</p>
+                        </div>
+                        
+                        <p>We serve <strong>wholesale distributors,</strong> hospitals, <strong>retail pharmacies,</strong> and government healthcare sectors with professionalism and reliability, striving to make a meaningful impact on global health. Nandan Therapeutics operates under the regulation of the Medicines and Healthcare products Regulatory Agency (MHRA), ensuring full compliance with Good Distribution Practice (GDP) standards across all our operations.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=700&q=80" alt="Healthcare Innovation">
+                        <div class="image-overlay">
+                            <h3>Nandan Therapeutics</h3>
+                            <p>Innovative products meeting international standards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-statement">
+                <p>Dedicated to Unwavering Excellence, Scientifically Engineered for a Healthier Tomorrow.</p>
+            </div>
+            
+            <!-- <div class="features">
+                <a class="feature-box" href="product.html?prodId=drug-product">
+                    <i class="fas fa-globe-americas"></i>
+                    <h4>Drug Products</h4>
+                    <p>Extensive footprint across  India and UK </p>
+                    <div class="card-link"> Learn more</div>
+
+                </a>
+                 <a class="feature-box" href="medical-devices.html">
+                    <i class="fas fa-heartbeat"></i>
+                    <h4>Medical Devices</h4>
+                    <p>Innovative solutions for hemostasis, aesthetics and healthcare</p>
+                    <div class="card-link"> Learn more</div>
+                 </a>
+                <a class="feature-box" href="other-products.html">
+                    <i class="fas fa-flask"></i>
+                    <h4>Other Products</h4>
+                    <p>Sustained-release formulations, transdermal patches, hormonal therapies</p>
+                    <div class="card-link"> Learn more</div>
+                </a>
+                 <a class="feature-box" href="business-development.html">
+                    <i class="fas fa-heartbeat"></i>
+                    <h4>Business / Partnership</h4>
+                    <p>Innovative solutions for hemostasis, aesthetics and healthcare</p>
+                    <div class="card-link"> Learn more</div>
+                 </a>
+               
+            </div> -->
+            <div class="features">
+            <a class="feature-box" href="product.html?prodId=drug-product">
+                <i class="fas fa-pills icon-drugs"></i>
+                <h4>Drug Products</h4>
+                <p>Specialty pharmaceuticals, hormonal therapies, sustained-release forms, transdermal patches.</p>
+                <div class="learn-more-block"><div class="card-link">Learn more</div></div>
+            </a>
+             
+            <a class="feature-box" href="medical-devices.html">
+                <i class="fas fa-heartbeat icon-devices"></i>
+                <h4>Medical Devices</h4>
+                <p>Emergency hemostatic dressings, POCT diagnostics, premium aesthetic solutions.  </p>
+                <div class="learn-more-block"><div class="card-link">Learn more</div></div>
+            </a>
+            
+            <a class="feature-box" href="other-products.html">
+                <i class="fas fa-capsules icon-other"></i>
+                <h4>Other Products</h4>
+                <p>Cosmetics, skin care products, nutraceuticals, health & wellness.  </p>
+                <div class="learn-more-block"><div class="card-link">Learn more</div></div>
+            </a>
+             
+            <a class="feature-box" href="business-development.html">
+                <i class="fas fa-handshake icon-business"></i>
+                <h4>Business / Partnership</h4>
+                <p>Market access partnerships, sourcing, licensing, tender supply support.</p>
+                <div class="learn-more-block"><div class="card-link">Learn more</div></div>
+            </a>
+        </div>
+            <div class="global-presence">
+                <div class="region">
+                    <i class="fas fa-map-marker-alt"></i> UK
+                </div>
+                <div class="region">
+                    <i class="fas fa-map-marker-alt"></i> India
+                </div>
+            </div>
+        
+        <div class="certifications">
+            <div class="cert-badge">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="cert-badge">
+                <i class="fas fa-clipboard-check"></i>
+            </div>
+            <div class="cert-badge">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <div class="cert-badge">
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+            </div>
+            </div>
+             <!-- <section class="home-product">
+                <div class="container">
+                    <h2 class="ce-teaser-headline">Products</h2>
+                    <div class="uk-grid">
+                        <div class="col-md-3 col-sm-6 col-12 ps-sm-0 pe-sm-2 p-0">
+                            <a href="product.html?prodId=drug-product">
+                                <div class="uk-grid-list">
+                                    <div class="uk-grid-top">
+                                        <img src="images/drug_prodcuts.png">
+                                    </div>
+                                    <div class="uk-grid-bottom">
+                                        <h3 class="uk-card-title">Drug Products</h3>
+                                        <p class="card-link"> Learn more</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 px-md-0 ps-sm-1 pe-sm-0 p-0 pe-md-2">
+                            <a href="medical-devices.html">
+                                <div class="uk-grid-list">
+                                    <div class="uk-grid-top">
+                                        <img src="images/medical_device.png">
+                                    </div>
+                                    <div class="uk-grid-bottom">
+                                        <h3 class="uk-card-title">Medical Devices</h3>
+                                        <p class="card-link"> Learn more</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-12 px-md-0 ps-sm-1 pe-sm-2 p-0">
+                            <a href="other-products.html">
+                                <div class="uk-grid-list">
+                                    <div class="uk-grid-top">
+                                        <img src="images/other.png">
+                                    </div>
+                                    <div class="uk-grid-bottom">
+                                        <h3 class="uk-card-title">Other Products</h3>
+                                        <p class="card-link"> Learn more</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 ps-sm-2 pe-md-0 p-0">
+                            <a href="business-development.html">
+                                <div class="uk-grid-list">
+                                    <div class="uk-grid-top">
+                                        <img src="images/business.png">
+                                    </div>
+                                    <div class="uk-grid-bottom">
+                                        <h3 class="uk-card-title">Business / Partnership</h3>
+                                        <p class="card-link"> Learn more</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>  -->
+            <section class="home-product swiper-block">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-baseline">
+                        <h1 class="swiper-block-title">OUR BLOGS</h1>
+                        <div class="swiper-button-list">
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="swiper pb-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="future-precision-medicine.html">
+                                    <div class="swiper-content-box h-100">
+                                        <img src="images/blog.jpg" alt="The Future of Precision Medicine">
+                                        <div class="card-content">
+                                            <div>
+                                                <div class="category"> The Future of Precision Medicine:</div>
+                                                <h3> How It’s Changing Patient Care </h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="mission-revolutionize.html">
+                                    <div class="swiper-content-box h-100">
+                                        <img src="images/blog-2.jpg" alt="Solar">
+                                        <div class="card-content">
+                                            <div>
+                                                <div class="category"> N-Therapeutics:</div>
+                                                <h3>Our Mission to Revolutionize Healthcare</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="need-for-new-therapies.html">
+                                    <div class="swiper-content-box h-100">
+                                        <img src="images/blog-3.avif" alt="Solar">
+                                        <div class="card-content">
+                                            <div>
+                                                <div class="category"> Understanding Rare Diseases:</div>
+                                                <h3>The Need for New Therapies</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="driving-innovation.html">
+                                    <div class="swiper-content-box h-100">
+                                        <img src="images/blog-4.jpg" alt="Solar">
+                                        <div class="card-content">
+                                            <div>
+                                                <div class="category"> The Rise of Biotech Startups:</div>
+                                                <h3>What’s Driving Innovation?</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Navigation -->
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </section>
+    <footer class="footer">
+        <section class="footer-medile-section">
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col-12">
+                        <figure class="footer-logo">
+                                <a href="/">
+                                    <img width="204" height="61" src="images/brand-log.jpg"
+                                        class="attachment-full size-full" alt="" decoding="async" loading="lazy">
+                                </a>
+                            </figure>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12 px-sm-2 px-0">
+                        <div class="footer-widget logo-widget">
+                            
+                            <div class="text">
+                                <!-- <p><span><b>Nandan Therapeutics</b> is a reputable global pharmaceutical company,
+                                        specialized
+                                        in the manufacturing, distributing, marketing and export of a <b>wide range
+                                            of</b> Human and Veterinary
+                                        <b>high-quality products.</b></span></p> -->
+                                <p><strong>Nandan Therapeutics</strong> is a specialty pharmaceutical and medical device company with deep expertise in global market access.</p>
+                            </div>
+                            <ul class="social-links clearfix">
+                                <li><a href="#_"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="#_"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a href="#_"><i class="bi bi-behance"></i></a></li>
+                                <li><a href="#_"><i class="bi bi-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-4 pt-md-0 px-sm-2 col-12 px-0 ">
+                        <div class="footer-widget links-widget">
+                            <!-- <div class="widget-title">
+                                <h3>LINK US</h3>
+                            </div> -->
+                            <div class="widget-content">
+                                <ul class="links-list clearfix">
+                                    <!-- <li><a href="#">Services</a></li> -->
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <!-- <li><a href="#">Cases</a></li> -->
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="contact-us.html">Contact</a></li>
+                                    <!-- <li><a href="#">Testimonial</a></li> -->
+                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                    <!-- <li><a href="#">Book Table</a></li> -->
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-4 pt-md-0 px-sm-2 col-12 px-0">
+                        <div class="footer-address">
+                        
+                            <h4> <i class="icon-map-marker"></i> United Kingdom:</h4>
+                            <p>
+                                Icon Innovation Centre,
+                                Suite 33, <br/>
+                                Eastern Way,
+                                Daventry-NN11 0QB,<br/>
+                                United Kingdom <br>
+                            <span class="single-letter">T</span>: +44 (0) 1327 304 976
+                            <br>
+                            <span class="single-letter">M</span>: +44 (0) 7944 509 807
+                            <br>
+                            <span class="single-letter">E</span>: info.uk@ntherapeutics.uk
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 pt-4 px-sm-2 pt-lg-0 px-0 d-none">
+                        <div class="footer-widget contact-widget">
+                            <ul class="info-list clearfix">
+                                <li>
+                                    <h6>Address :</h6>
+                                    D.No-1-1-336/19, Vivek Nagar, Chikkadpally,
+                                    Hyderabad, 500020 Telangana, India.
+                                </li>
+                                <li>
+                                    <h6>Telephone :</h6><a href="tel:+99000111222500">(+91 (0) 7013 380 075)</a>
+                                </li>
+                                <li>
+                                    <h6>E-mail :</h6><a href="mailto:info@example.com">info.india@ntherapeutics.uk</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="copyright row m-0 centred">
+                    <p class="text-center text-white mt-3"> © Copyright 2025 by Nandan Therapeutics</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="footer-bottom centred">
+            <div class="container">
+                <div class="copyright">
+                    <p> © Copyright 2025 by Nandan Therapeutics</p>
+                </div>
+            </div>
+        </section> -->
+    </footer>
+    <div class="scroll-up" data-target="html">
+        <i class="icon icon-angle-up-1"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.cookieMessage.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <div class="modal fade" id="cookieModal" style="pointer-events: none;" tabindex="-1"
+        aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered cookies-modal">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Nandan Therapeutics</h5>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold">Your privacy</h6>
+                    <p>
+                        Nandan Therapeutics uses strictly necessary cookies and similar technologies to operate this
+                        website and enhance your user experience. In addition to essential cookies, we use optional
+                        cookies to personalize content, analyze site traffic, and improve our services. These cookies
+                        may also help us provide relevant advertisements and interact with third parties.
+                    </p>
+                    <p> By clicking <b>"Accept optional cookies",</b> you agree to the placement of optional cookies on
+                        your device. You can manage your cookie preferences or withdraw your consent at any time by
+                        clicking the <b>"Customize cookies"</b> link. Please note that certain features may not function
+                        optimally if you decline optional cookies.
+                    </p>
+
+                </div>
+                <div class="modal-footer border-0 cookies-footer">
+                    <!-- <button class="btn btn-primary" id="customizeCookies">Customize cookies</button> -->
+                    <button class="btn btn-primary" id="declineCookies">Decline optional cookies</button>
+                    <button class="btn btn-primary" id="acceptCookies">Accept optional cookies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            var swiper = new Swiper('.swiper', {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+            // window.addEventListener("scroll", function () {
+            //     const video = document.getElementById("myVideo");
+            //     const videoContent = document.getElementById("pharma-banner-title");
+            //     const scrollY = window.scrollY;
+            //     const windowWidth = window.innerWidth;
+            //     if (scrollY > 180) {
+            //         if (windowWidth < 576) {
+            //             video.style.width = "100%";
+            //         } else if (windowWidth > 1400) {
+            //             video.style.width = "1320px";
+            //         } else if (windowWidth > 1200) {
+            //             video.style.width = "1140px";
+            //         } else if (windowWidth > 992) {
+            //             video.style.width = "960px";
+            //         } else if (windowWidth > 768) {
+            //             video.style.width = "720px";
+            //         } else if (windowWidth > 576) {
+            //             video.style.width = "540";
+            //         }
+            //         video.style.height = "auto";
+            //     } else {
+            //         video.style.width = "100%";
+            //         video.style.height = "auto";
+            //     }
+            //     if (scrollY > 200) {
+            //         videoContent.style.opacity = "0";
+            //     } else if (scrollY > 150) {
+            //         videoContent.style.opacity = "0.4";
+            //     } else if (scrollY > 100) {
+            //         videoContent.style.opacity = "0.6";
+            //     } else if (scrollY > 50) {
+            //         videoContent.style.opacity = "0.8";
+            //     } else {
+            //         videoContent.style.opacity = "1";
+            //     }
+            // });
+
+            // Check if user already accepted cookies
+            if (!localStorage.getItem("cookiesAccepted")) {
+                var cookieModal = new bootstrap.Modal(document.getElementById("cookieModal"), {});
+                cookieModal.show();
+            }
+
+            // Handle button clicks
+            $("#acceptCookies").click(function () {
+                localStorage.setItem("cookiesAccepted", "true");
+                bootstrap.Modal.getInstance(document.getElementById("cookieModal")).hide();
+            });
+
+            $("#declineCookies").click(function () {
+                localStorage.setItem("cookiesAccepted", "false");
+                bootstrap.Modal.getInstance(document.getElementById("cookieModal")).hide();
+            });
+
+            $("#customizeCookies").click(function () {
+                alert("Customization options can be added here!");
+            });
+
+
+
+            $("#mainBanners").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false
+            });
+
+
+
+        });
+    </script>
+</body>
+
+</html>
